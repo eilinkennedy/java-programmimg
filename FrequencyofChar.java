@@ -1,27 +1,30 @@
 import java.util.Scanner;
-public class FrequencyofChar {
-	public static void main(String[]args) 
+public class OccuranceOfChar 
+{
+	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		System.out.println("enter string:");
-		String str1=sc.nextLine();
-		String str=str1.toLowerCase();
-		int len=str.length();
-		//System.out.println("enter the character to check for its frequency:");
-		//char ch=sc.nextLine().charAt(0);
+		System.out.println("Enter the string to check the occurance of given character :");
+		String str=sc.nextLine();
+		System.out.println("Enter the character to be searched :");
+		String ch=sc.nextLine();
 		int count=0;
-		for(int i=0;i<len;i++) 
+		int len=str.length();
+		for(int i=0;i<len;i++)
 		{
-			if((str.charAt(i)=='a')||(str.charAt(i)=='e')||(str.charAt(i)=='i')||(str.charAt(i)=='o'))
+			if(str.charAt(i)==ch.charAt(0))
 			{
 				count++;
 			}
-              
+			
+			
 		}
+		System.out.println("The occurance of character"+ch+ "is"+count);
 		
-		System.out.println("The number of vowels is" +count);
+		
 	}
+	
+	
+ 
+ 
 }
-		
-
-
